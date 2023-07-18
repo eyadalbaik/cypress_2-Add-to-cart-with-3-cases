@@ -1,18 +1,23 @@
 describe("log in" , ()=>{
     it ("test" , ()=>{
-        cy.visit("https://www.saucedemo.com/")
+        cy.visit("https://codenboxautomationlab.com/practice/");
 
-        cy.get('[data-test="username"]').type("standard_user")
-        cy.get('[data-test="password"]').type("secret_sauce") 
-        cy.get('[data-test="login-button"]').click()
+    
+        // select all
+         cy.get("input[type='checkbox']").check()
+    
 
-     
-for(let i=0 ; i < 6 ; i++) {
+        //  cy.get("input[type='checkbox']").check(["option1","option2"])
+    
+        // check by index 
+        // cy.get("input[type='checkbox']").eq(1).check();
+    
+        // select the first checkbox
+        // cy.get("input[type='checkbox']").first().check();
 
-let myArray = cy.get('div#inventory_container').find('.btn').eq(i).click()
-
-}
-
-
+    //    select the last checkbox
+    //     cy.get("input[type='checkbox']").last().check();
+    
+        
     })
 })
